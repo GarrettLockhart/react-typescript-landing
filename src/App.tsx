@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import ExpenseItem from './components/Expenses/ExpenseItem';
+import { expenseData } from '../src/components/assets/expenseItemData';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {expenseData.map((item) => {
+        return (
+          <ExpenseItem
+            id={item.id}
+            title={item.title}
+            price={item.price}
+            date={item.date}
+          ></ExpenseItem>
+        );
+      })}
+    </>
   );
 }
 
