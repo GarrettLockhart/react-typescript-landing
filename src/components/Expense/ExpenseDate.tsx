@@ -1,3 +1,5 @@
+import dateHelper from '../assets/dateHelper';
+
 type Props = {
   id: number;
   title: string;
@@ -6,7 +8,7 @@ type Props = {
 };
 
 const ExpenseDate = (props: Props) => {
-  return <div>{props.date}</div>;
+  return <div>{dateHelper(props.date)}</div>;
 };
 
 export default ExpenseDate;

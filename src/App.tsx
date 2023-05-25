@@ -1,5 +1,5 @@
-import ExpenseItem from './components/Expenses/ExpenseItem';
-import { expenseData } from '../src/components/assets/expenseItemData';
+import ExpenseItem from './components/Expense/ExpenseItem';
+import { expenseData } from './components/assets/expenseData';
 function App() {
   return (
     <>

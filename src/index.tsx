@@ -1,20 +1,12 @@
-import ExpenseItem from './components/Expenses/ExpenseItem';
-import { expenseData } from '../src/components/assets/expenseItemData';
-function App() {
-  return (
-    <>
-      {expenseData.map((item: any) => {
-        return (
-          <ExpenseItem
-            id={item.id}
-            title={item.title}
-            price={item.price}
-            date={item.date}
-          ></ExpenseItem>
-        );
-      })}
-    </>
-  );
-}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-export default App;
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
