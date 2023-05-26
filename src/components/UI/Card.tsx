@@ -1,5 +1,11 @@
-const Card = (props: any) => {
-  return <div>{props.children}</div>;
+import { ReactNode } from 'react';
+
+interface CardProps {
+  children: ReactNode;
+}
+
+const Card = ({ children }: CardProps) => {
+  return <div>{children}</div>;
 };
 
 export default Card;
