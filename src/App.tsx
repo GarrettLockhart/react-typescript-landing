@@ -1,18 +1,19 @@
-import ExpenseItem from './components/Expense/ExpenseItem';
-import { expenseData } from './components/assets/expenseData';
+import { createGlobalStyle } from 'styled-components';
+import Navbar from './components/Navigation/Navbar';
+// css reset
+const GlobalStyle = createGlobalStyle`
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+`;
+
 function App() {
   return (
     <>
-      {expenseData.map((item) => {
-        return (
-          <ExpenseItem
-            id={item.id}
-            title={item.title}
-            price={item.price}
-            date={item.date}
-          ></ExpenseItem>
-        );
-      })}
+      <GlobalStyle />
+      <Navbar />
     </>
   );
 }
