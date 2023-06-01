@@ -1,19 +1,34 @@
 import Container from '../UI/Container';
 import ListItem from '../UI/ListItem';
 import styled from 'styled-components';
-import { Typography } from '@mui/material';
+
+enum VARIANT {
+  PRIMARY,
+  SECONDARY
+}
+interface IProps {
+  variant?: VARIANT;
+}
+
+const UlStyled = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const H1Styled = styled.h1<IProps>`
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: ${(props) => props.theme.palette.primary.main};
+`;
+
+const LinkStyled = styled.a`
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+`;
 
 const Navbar = () => {
-  const UlStyled = styled.ul`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  const H1Styled = styled.h1`
-    font-size: 3rem;
-  `;
-
   return (
     <Container>
       <div>
@@ -21,21 +36,21 @@ const Navbar = () => {
       </div>
       <div>
         <UlStyled>
-          <a href=''>
+          <LinkStyled href='/home'>
             <ListItem>Home</ListItem>
-          </a>
-          <a href=''>
+          </LinkStyled>
+          <LinkStyled href='#'>
             <ListItem>New</ListItem>
-          </a>
-          <a href=''>
+          </LinkStyled>
+          <LinkStyled href='#'>
             <ListItem>Popular</ListItem>
-          </a>
-          <a href=''>
+          </LinkStyled>
+          <LinkStyled href='#'>
             <ListItem>Trending</ListItem>
-          </a>
-          <a href=''>
+          </LinkStyled>
+          <LinkStyled href='#'>
             <ListItem>Categories</ListItem>
-          </a>
+          </LinkStyled>
         </UlStyled>
       </div>
     </Container>

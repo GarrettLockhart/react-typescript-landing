@@ -5,5 +5,6 @@ export const ContainerStyled = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 75px;
+  height: 100px;
+  margin-top: 30px;
 `;
