@@ -8,12 +8,13 @@ export const defaultTheme: DefaultTheme = {
       white: '#ffffff'
     },
     primary: {
-      main: '#726a95',
-      contrastText: '#ffffff'
+      main: '#000019',
+      contrastText: '#ffffff',
+      altText: '#6e6b76'
     },
-    secondary: {
-      main: '#709fb0',
-      contrastText: '#ffffff'
+    active: {
+      active100: '#e0a960',
+      active200: '#cd655a'
     }
   }
 };

@@ -10,6 +10,15 @@ interface IProps {
   variant?: VARIANT;
 }
 
+const ContainerStyled = styled(Container)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  margin-top: 30px;
+`;
+
 const UlStyled = styled.ul`
   display: flex;
   justify-content: center;
@@ -19,18 +28,21 @@ const UlStyled = styled.ul`
 const H1Styled = styled.h1<IProps>`
   font-size: 3rem;
   font-family: 'Times New Roman', Times, serif;
-  color: ${(props) => props.theme.palette.primary.main};
+  color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 const LinkStyled = styled.a`
-  color: black;
+  color: ${({ theme }) => theme.palette.primary.altText};
   text-decoration: none;
   font-size: 14px;
+  &:hover {
+    color: ${({ theme }) => theme.palette.active.active200};
+  }
 `;
 
 const Navbar = () => {
   return (
-    <Container>
+    <ContainerStyled as='div'>
       <div>
         <H1Styled>W.</H1Styled>
       </div>
@@ -53,7 +65,7 @@ const Navbar = () => {
           </LinkStyled>
         </UlStyled>
       </div>
-    </Container>
+    </ContainerStyled>
   );
 };
 

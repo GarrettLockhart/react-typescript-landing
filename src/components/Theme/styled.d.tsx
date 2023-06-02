@@ -1,7 +1,13 @@
 import 'styled-components';
 interface IPalette {
   main: string;
-  contrastText: string;
+  contrastText?: string;
+  altText?: string;
+}
+
+interface IActive {
+  active100?: string;
+  active200?: string;
 }
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -12,7 +18,7 @@ declare module 'styled-components' {
         white: string;
       };
       primary: IPalette;
-      secondary: IPalette;
+      active: IActive;
     };
   }
 }
