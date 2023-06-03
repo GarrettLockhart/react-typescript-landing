@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import Container from '../UI/Container';
 
 const StyledContainer = styled(Container)`
-  display: grid;
+  display: flex;
+  flex-direction: row;
 `;
 
 const HeroContainer = () => {
   return (
-    <StyledContainer>
+    <StyledContainer as='div'>
+      <div>Hello</div>
       <div>Hello</div>
     </StyledContainer>
   );
