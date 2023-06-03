@@ -2,6 +2,8 @@ import { ThemeProvider } from 'styled-components';
 import { defaultTheme as theme } from './components/Theme/theme';
 import { createGlobalStyle } from 'styled-components';
 import Navbar from './components/Navigation/Navbar';
+import HeroContainer from './components/Landing/HeroContainer';
+
 // css reset
 const GlobalStyle = createGlobalStyle`
 * {
@@ -18,6 +20,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Navbar />
+        <HeroContainer />
       </ThemeProvider>
     </>
   );
