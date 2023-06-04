@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import newsData from '../assets/news-data/news-data';
+
 import Container from '../UI/Container';
+import newsData from '../assets/news-data/news-data';
 
 const StyledItemWrapper = styled(Container)`
   display: flex;

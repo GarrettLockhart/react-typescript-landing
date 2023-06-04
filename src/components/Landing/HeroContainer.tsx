@@ -21,8 +21,8 @@ const HeroContainer = () => {
   return (
     <Wrapper>
       <StyledContainer as='main'>
-        <HeroImageCard></HeroImageCard>
-        <HeroNewsCard></HeroNewsCard>
+        <HeroImageCard />
+        <HeroNewsCard />
       </StyledContainer>
     </Wrapper>
   );

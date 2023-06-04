@@ -1,6 +1,7 @@
+import styled from 'styled-components';
+
 import Container from '../UI/Container';
 import ListItem from '../UI/ListItem';
-import styled from 'styled-components';
 
 const ContainerStyled = styled(Container)`
   display: flex;

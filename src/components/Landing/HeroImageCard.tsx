@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+
 import Card from '../UI/Card';
 import HeroImageReadMore from './HeroImageReadMore';
 import HeroImage from '../assets/images/image-web-3-desktop.jpg';
+
 
 const StyledImageCard = styled(Card)`
   display: flex;
