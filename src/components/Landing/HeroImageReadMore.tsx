@@ -20,6 +20,11 @@ const StyledButton = styled.button`
   color: ${({ theme }) => theme.palette.primary.contrastText};
   width: 50%;
   padding: 15px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({theme}) => theme.palette.active.active200};
+  }
 `;
 
 const StyledParagraph = styled.p``;
