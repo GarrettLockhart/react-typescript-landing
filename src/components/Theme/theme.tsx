@@ -10,7 +10,8 @@ export const defaultTheme: DefaultTheme = {
     primary: {
       main: '#000019',
       contrastText: '#ffffff',
-      altText: '#6e6b76'
+      altText100: '#6e6b76',
+      altText200: '#a7a7a7'
     },
     active: {
       active100: '#e0a960',

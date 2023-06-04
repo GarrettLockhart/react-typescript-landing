@@ -2,7 +2,8 @@ import 'styled-components';
 interface IPalette {
   main: string;
   contrastText?: string;
-  altText?: string;
+  altText100?: string;
+  altText200?: string;
 }
 
 interface IActive {

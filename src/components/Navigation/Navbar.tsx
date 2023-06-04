@@ -26,7 +26,7 @@ const H1Styled = styled.h1`
 `;
 
 const LinkStyled = styled.a`
-  color: ${({ theme }) => theme.palette.primary.altText};
+  color: ${({ theme }) => theme.palette.primary.altText100};
   text-decoration: none;
   font-size: 14px;
   &:hover {

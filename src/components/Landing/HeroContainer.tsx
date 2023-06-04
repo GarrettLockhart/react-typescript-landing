@@ -12,8 +12,9 @@ const Wrapper = styled.div`
 const StyledContainer = styled(Container)`
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex: 1;
   height: 50vh;
+  gap: 20px;
 `;
 
 const HeroContainer = () => {

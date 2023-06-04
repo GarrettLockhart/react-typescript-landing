@@ -30,6 +30,7 @@ const StyledHeaderCard = styled.section`
   padding: 0 10px;
   color: ${({ theme }) => theme.palette.primary.main};
   font-size: 3rem;
+  font-weight: bold;
 `;
 
 const HeroImageCard = () => {

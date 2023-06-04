@@ -21,13 +21,16 @@ const StyledButton = styled.button`
   width: 50%;
   padding: 15px 15px;
   cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
-    background-color: ${({theme}) => theme.palette.active.active200};
+    font-weight: bold;
   }
 `;
 
-const StyledParagraph = styled.p``;
+const StyledParagraph = styled.p`
+  color: ${({ theme }) => theme.palette.primary.altText100};
+`;
 
 const HeroImageReadMore = () => {
   return (
