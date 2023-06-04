@@ -4,8 +4,9 @@ import HeroNewsCard from './HeroNewsCard';
 import HeroImageCard from './HeroImageCard';
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: 80%;
   height: 100vh;
+  margin: 0 auto;
 `;
 
 const StyledContainer = styled(Container)`

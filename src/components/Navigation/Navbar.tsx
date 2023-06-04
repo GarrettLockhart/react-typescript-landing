@@ -2,20 +2,14 @@ import Container from '../UI/Container';
 import ListItem from '../UI/ListItem';
 import styled from 'styled-components';
 
-enum VARIANT {
-  PRIMARY,
-  SECONDARY
-}
-interface IProps {
-  variant?: VARIANT;
-}
-
 const ContainerStyled = styled(Container)`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 30px;
 `;
 
@@ -25,7 +19,7 @@ const UlStyled = styled.ul`
   align-items: center;
 `;
 
-const H1Styled = styled.h1<IProps>`
+const H1Styled = styled.h1`
   font-size: 3rem;
   font-family: 'Times New Roman', Times, serif;
   color: ${({ theme }) => theme.palette.primary.main};
